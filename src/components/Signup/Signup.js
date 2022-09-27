@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import GoogleLogo from "../../media/google.svg";
-import {
-  useCreateUserWithEmailAndPassword,
-  useSignInWithGoogle,
-} from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { toast } from "react-toastify";
 import { auth } from "../../firebase.init";
 import logo from "../../media/logo.png";
@@ -14,11 +10,13 @@ const Signup = () => {
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",
+    role: false,
   });
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     location: "Dhaka, Bangladesh",
+    role: false,
     img: "https://i.ibb.co/5sQ7jQp/demouser-01.png",
   });
   const [errors, setErrors] = useState({
@@ -33,13 +31,6 @@ const Signup = () => {
     loading,
     hookError,
   ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-
-  const [
-    signInWithGoogle,
-    googleUser,
-    loadingGoogle,
-    googleError,
-  ] = useSignInWithGoogle(auth);
 
   const handleNameChange = (e) => {
     setUserData({ ...userData, name: e.target.value });
@@ -87,27 +78,10 @@ const Signup = () => {
     handleAddUser(userData);
   };
 
-  const handleGoogle = () => {
-    signInWithGoogle();
-  };
-
   useEffect(() => {
-    const newUser = {
-      name: googleUser?.user?.displayName,
-      email: googleUser?.user?.email,
-      location: "Dhaka, Bangldesh",
-      img: googleUser?.user?.photoURL,
-    };
-    if (newUser.name !== "" && newUser.name !== undefined) {
-      handleAddUser(newUser, googleUser);
-      console.log(newUser);
-    }
-  }, [googleUser]);
-
-  useEffect(() => {
-    const error = hookError || googleError;
+    const error = hookError;
     if (error) {
-      //console.log(error?.code);
+      console.log(error?.code);
       switch (error?.code) {
         case "auth/email-already-in-use":
           toast.error("Email is already registered.");
@@ -119,15 +93,15 @@ const Signup = () => {
           toast.error("Something went wrong.");
       }
     }
-  }, [hookError, googleError]);
+  }, [hookError]);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (user || googleUser) {
+    if (user) {
       navigate("/home");
     }
-  }, [user, googleUser]);
+  }, [user]);
 
   return (
     <div className="container my-5">
@@ -200,7 +174,7 @@ const Signup = () => {
                 Sign Up
               </button>
             </form>
-            {(loading || loadingGoogle) && (
+            {loading && (
               <button className="btn btn-dark mt-2" type="button">
                 <span
                   className="me-2 spinner-grow spinner-grow-sm"
@@ -220,15 +194,6 @@ const Signup = () => {
               <hr className="col-5 text-secondary" />
               <p className="col-1 text-secondary">or</p>
               <hr className="col-5 text-secondary" />
-            </div>
-            <div className="">
-              <button
-                onClick={handleGoogle}
-                className="px-5 mb-3 btn btn-outline-dark d-flex justify-content-center align-items-center w-100"
-              >
-                <img className="d-block" src={GoogleLogo} alt="" />
-                <p className="mt-3 fs-5 ms-3"> Google Sign Up </p>
-              </button>
             </div>
           </div>
         </div>

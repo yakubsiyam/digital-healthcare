@@ -27,12 +27,6 @@ const Signin = () => {
     loading,
     hookError,
   ] = useSignInWithEmailAndPassword(auth);
-  const [
-    signInWithGoogle,
-    googleUser,
-    loadingGoogle,
-    googleError,
-  ] = useSignInWithGoogle(auth);
 
   const handleEmailChange = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;
@@ -64,31 +58,6 @@ const Signin = () => {
     signInWithEmail(userInfo.email, userInfo.password);
   };
 
-  const handleGoogle = () => {
-    signInWithGoogle();
-  };
-
-  const handleAddUser = (newUser) => {
-    axios
-      .put("https://digital-healthcare.onrender.com/users", newUser)
-      .then((res) => {
-        //console.log(res.data);
-      });
-  };
-
-  useEffect(() => {
-    const newUser = {
-      name: googleUser?.user?.displayName,
-      email: googleUser?.user?.email,
-      location: "Dhaka, Bangldesh",
-      img: googleUser?.user?.photoURL,
-    };
-    if (newUser.name !== "") {
-      handleAddUser(newUser);
-      //console.log(newUser);
-    }
-  }, [googleUser]);
-
   const handleResetPassword = () => {
     if (userInfo.email !== "") {
       toast.success("Your password reset link was sent to your mail,");
@@ -98,7 +67,7 @@ const Signin = () => {
   };
 
   useEffect(() => {
-    const error = hookError || googleError;
+    const error = hookError;
     if (error) {
       console.log(error?.code);
       switch (error?.code) {
@@ -115,38 +84,16 @@ const Signin = () => {
           toast.error("Something went wrong.");
       }
     }
-  }, [hookError, googleError]);
-
-  const getToken = async (admin) => {
-    const email = admin?.user?.email;
-    //console.log(email);
-    if (email) {
-      const { data } = await axios.post(
-        "https://digital-healthcare.onrender.com/signin",
-        {
-          email,
-        }
-      );
-      localStorage.setItem("accessToken", data.accessToken);
-      //console.log(localStorage);
-    }
-  };
-
-  if (googleUser || user) {
-    const admin = googleUser || user;
-    getToken(admin);
-  }
+  }, [hookError]);
 
   const navigate = useNavigate();
-  const location = useLocation();
-  const from = location.state?.from?.pathname || "/home";
 
   useEffect(() => {
     // console.log(googleUser);
-    if (user || googleUser) {
-      navigate(from, { replace: true });
+    if (user) {
+      navigate("/home");
     }
-  }, [user, googleUser]);
+  }, [user]);
 
   return (
     <div className="container">
@@ -191,7 +138,7 @@ const Signin = () => {
                   />
                 </div>
               </div>
-              {(loading || loadingGoogle) && (
+              {loading && (
                 <button className="btn btn-dark" type="button">
                   <span
                     className="me-2 spinner-grow spinner-grow-sm"
@@ -222,15 +169,6 @@ const Signin = () => {
               <hr className="col-5 text-secondary" />
               <p className="col-1 text-secondary">or</p>
               <hr className="col-5 text-secondary" />
-            </div>
-            <div className="">
-              <button
-                onClick={handleGoogle}
-                className="px-5 btn btn-outline-dark d-flex justify-content-center align-items-center w-100"
-              >
-                <img className="d-block" src={GoogleLogo} alt="" />
-                <p className="mt-3 fs-5 ms-3"> Google Sign In </p>
-              </button>
             </div>
           </div>
         </div>
