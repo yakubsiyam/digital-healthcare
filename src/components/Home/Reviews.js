@@ -19,9 +19,9 @@ const Reviews = () => {
     );
   }
   let reviews = data?.data;
-  const totalReviews = reviews.length;
-  let filteredReviews = reviews.slice(totalReviews - 6, totalReviews);
-  filteredReviews = filteredReviews.reverse();
+  const totalReviews = reviews?.length;
+  let filteredReviews = reviews?.slice(totalReviews - 6, totalReviews);
+  filteredReviews = filteredReviews?.reverse();
 
   const settings = {
     className: "center",

@@ -83,6 +83,7 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+    console.log(userData);
     handleAddUser(userData);
   };
 
@@ -97,9 +98,9 @@ const Signup = () => {
       location: "Dhaka, Bangldesh",
       img: googleUser?.user?.photoURL,
     };
-    if (newUser.name !== "") {
-      handleAddUser(newUser);
-      //console.log(newUser);
+    if (newUser.name !== "" && newUser.name !== undefined) {
+      handleAddUser(newUser, googleUser);
+      console.log(newUser);
     }
   }, [googleUser]);
 
@@ -120,31 +121,11 @@ const Signup = () => {
     }
   }, [hookError, googleError]);
 
-  const getToken = async (admin) => {
-    const email = admin?.user?.email;
-    if (email) {
-      const { data } = await axios.post(
-        "https://digital-healthcare.onrender.com/signin",
-        {
-          email,
-        }
-      );
-      localStorage.setItem("accessToken", data.accessToken);
-    }
-  };
-
-  if (googleUser || user) {
-    const admin = googleUser || user;
-    getToken(admin);
-  }
-
   const navigate = useNavigate();
-  const location = useLocation();
-  const from = location.state?.from?.pathname || "/home";
 
   useEffect(() => {
     if (user || googleUser) {
-      navigate(from, { replace: true });
+      navigate("/home");
     }
   }, [user, googleUser]);
 

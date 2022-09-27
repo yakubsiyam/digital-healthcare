@@ -1,11 +1,11 @@
-import axios from 'axios';
-import { useQuery } from 'react-query';
+import axios from "axios";
+import { useQuery } from "react-query";
 
 const useReviews = () => {
-    const { isLoading, data } = useQuery("reviews", () =>
-        axios(`https://wood-peckers.herokuapp.com/reviews`)
-    );
-    return [isLoading, data];
+  const { isLoading, data } = useQuery("reviews", () =>
+    axios(`https://digital-healthcare.onrender.com/reviews`)
+  );
+  return [isLoading, data];
 };
 
 export default useReviews;

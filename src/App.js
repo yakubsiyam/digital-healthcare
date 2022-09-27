@@ -30,9 +30,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/products" element={<Products></Products>}></Route>
+        <Route path="/services" element={<Products></Products>}></Route>
         <Route
-          path="/products/:productId"
+          path="/services/:productId"
           element={
             <PrivateRoute>
               <ProductDetails></ProductDetails>
