@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "name": "Tanmay Kumar",
+        "location": "Dhaka, Bangladesh",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 4,
+        "title": "Oops! I did it again...",
+        "text": "I’ll be honest with my review and say that the product I received was not what I thought I had ordered. But I was wrong, very wrong...  I highly recommend it. You won’t regret purchasing this mini fantastic box cutter. Simply the best!"
+    },
+    {
+        "id": 1,
+        "name": "Henry Markwood",
+        "location": "Copenhagen, Denmark",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 3,
+        "title": "Fancy but not like old schools",
+        "text": "I was surprised at how difficult it was to find a box cutter with good reviews. I just needed something small to keep at my desk for occasional use. This opens boxes but it's very tiny. Even having read the item description, I was still surprised."
+    },
+    {
+        "id": 2,
+        "name": "Tom Holland",
+        "location": "London, United Kingdom",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 5,
+        "title": "Amazing Products...",
+        "text": "I absolutely love the products! I love that the fast delivery service. Very satisfied with this purchase, they come in a sturdy zip-up case. I’ve only had them for a month now but I’m super impressed with the quality for the price! And the color is absolutely adorable! Thank you so much."
+    },
+    {
+        "id": 3,
+        "name": "AA AA",
+        "location": "London, United Kingdom",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 5,
+        "title": "Amazing Products...",
+        "text": "I absolutely love the products! I love that the fast delivery service. Very satisfied with this purchase, they come in a sturdy zip-up case. I’ve only had them for a month now but I’m super impressed with the quality for the price! And the color is absolutely adorable! Thank you so much."
+    },
+    {
+        "id": 4,
+        "name": "BB BB",
+        "location": "London, United Kingdom",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 5,
+        "title": "Amazing Products...",
+        "text": "I absolutely love the products! I love that the fast delivery service. Very satisfied with this purchase, they come in a sturdy zip-up case. I’ve only had them for a month now but I’m super impressed with the quality for the price! And the color is absolutely adorable! Thank you so much."
+    },
+    {
+        "id": 5,
+        "name": "CC CC",
+        "location": "London, United Kingdom",
+        "img": "https://i.ibb.co/5sQ7jQp/demouser-01.png",
+        "rating": 5,
+        "title": "Amazing Products...",
+        "text": "I absolutely love the products! I love that the fast delivery service. Very satisfied with this purchase, they come in a sturdy zip-up case. I’ve only had them for a month now but I’m super impressed with the quality for the price! And the color is absolutely adorable! Thank you so much."
+    }
+]

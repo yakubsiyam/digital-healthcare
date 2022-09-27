@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Neurology Clinic",
+    "description": "Some neurologists receive subspecialty training focusing on a particular area ofthe fields, these training programs are called fellowships, and are one to two years.",
+
+    "secvice": ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
+
+    "fulldescription": "Neurology , string, nerve and the suffix is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the brain, the spinal cord and the peripheral nerves. Neurological practice relies heavily on the field of neuroscience, the scientific study of the nervous system.A neurologist is a physician specializing in neurology and trained to investigate, diagnose and treat neurological disorders.Neurologists treat a myriad of neurologic conditions, including stroke, seizures, movement disorders such as Parkinson's disease,autoimmune neurologic disorders such as multiple sclerosis, headache disorders like migraine and dementias such as Alzheimer's disease.Neurologists may also be involved in clinical research, clinical trials, and basic or translational research.While neurology is a nonsurgical specialty, its corresponding surgical specialty is neurosurgery",
+    "img": "https://i.ibb.co/9rnYJjP/cardiac.png"
+  },
+  {
+    "id": 2,
+
+    "title": "Cardiology Clinic",
+    "description": "All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children and adult heart disease.",
+
+    "secvice": ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
+
+    "fulldescription": "contentCardiology (from Ancient Greek καρδίᾱ is a branch of medicine that deals with disorders of the heart and the cardiovascular system.The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiolog Physicians who specialize in this field of medicine are called cardiologists, a specialty of internal medicine. Pediatric cardiologists are pediatricians who specialize in cardiology.Physicians who specialize in cardiac surgery are called cardiothoracic surgeons or cardiac surgeons, a specialty of general surgery . All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are through different training pathways.Therefore, an adult cardiologist (often simply called 'cardiologist') is inadequately trained to take care of children, and pediatric cardiologists are not trained to take care of adult heart disease.The surgical aspects are not included in cardiology and are in the domain of cardiothoracic surgery.For example, coronary artery bypass surgery (CABG), cardiopulmonary bypass and valve replacement are surgical procedures performed by surgeons, not cardiologists. However, some minimally invasive procedures such as the cardiac catheterization and pacemaker implantation are performed by cardiologists with additional training in non-surgical interventions (interventional cardiology and electrophysiology respectively",
+    "img": "https://i.ibb.co/s3HdmvW/HEART.png"
+  },
+  {
+    "id": 3,
+
+    "title": "Pediatric Clinic",
+    "description": "Pathology is the study of disease, it is the bridge between science and medicine.Also it underpins every aspect of patient care, from diagnostic testing and treatment.",
+
+    "secvice": ["Surgical pathology", "Histopathology", ">Cytopathology"],
+
+    "fullescription": "Pediatrics  is the branch of medicine that involves the medical care of infants, children, adolescents, and young adults.In the United Kingdom, paediatrics covers many of their youth until the age of 18. The American Academy of Pediatrics recommends people seek pediatric care through the age of 21, but some pediatric subspecialists continue to care for adults up to 25.Worldwide age limits of pediatrics have been trending upward year after year.[4] A medical doctor who specializes in this area is known as a pediatrician, or paediatrician. The word pediatrics and its cognates mean healer of children,Pediatricians work in clinics, research centers, universities, general hospitals and children's hospitals, including those who practice pediatric subspecialties (e.g. neonatology requires resources available in a NICU).",
+    "img": "https://i.ibb.co/9NT2bM1/LABORATORY.png"
+  }
+]

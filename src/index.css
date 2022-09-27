@@ -1,0 +1,115 @@
+* {
+  font-family: 'Manrope', sans-serif;
+  text-decoration: none;
+}
+
+.text-ss {
+  font-size: 13px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.logo-f {
+  font-family: 'Lobster', cursive;
+}
+
+.logo-i {
+  box-shadow: 0 0 5px white;
+}
+
+.bg-dark-pro {
+  background-color: #130707;
+}
+
+.bg-light-pro {
+  background-color: #FFE6E5;
+}
+
+.bg-main {
+  background-color: #FF8B87;
+}
+
+.btn-main {
+  background-color: #FF8B87;
+  transition-duration: .2s;
+  color: white;
+}
+
+.btn-main:hover {
+  background-color: #FF8B87;
+  color: white;
+}
+
+.btn-outline-main {
+  color: #FF8B87;
+  border: 1px solid #FF8B87;
+  transition-duration: .2s;
+}
+
+.btn-outline-main:hover {
+  background-color: #FF8B87;
+  color: white;
+}
+
+.text-main {
+  color: #FF8B87 !important;
+}
+
+.text-second {
+  color: #bbbbbb;
+}
+
+.border-main {
+  border-color: #FF8B87 !important;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-t-20 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-t-10 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 15px #949494 !important;
+  transition-duration: .2s;
+}
+
+.foo-hover:hover {
+  color: white !important;
+}
+
+.ico:hover {
+  color: #FF8B87 !important;
+}
+
+.summery {
+  background-image: url(../src/media/summery.svg);
+  background-size: cover;
+  min-height: 450px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mh-5 {
+  min-height: 500px;
+}
+
+.of-x-h {
+  overflow-x: hidden !important;
+}

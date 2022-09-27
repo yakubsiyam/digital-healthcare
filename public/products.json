@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Swingline Stapler",
+        "text": "PREMIUM METAL STAPLER – All-metal, royal blue stapler is designed for durability. A specially crafted inner rail always delivers jam-resistant, accurate stapling you can count on. DESIGNED FOR DESKTOP – Classic stapler is intended for desktop use. It holds a full strip of 210 staples. A helpful low-staple indicator lets you know when it's time for a refill. SECURES 70 SHEETS – This high-performing stapler fastens up to 70 sheets of paper and works best with standard size Swingline S.F. 4 Premium Staples. The staples have standard ¼” length legs. TACKING & PINNING – Tack papers to bulletin boards with ease: unlatch the stapler and you're ready. The stapler can also produce pointed staples for temporary pinning: simply reverse the anvil.",
+        "img": "https://i.ibb.co/J2drnYN/stapler.jpg",
+        "stock": 54626,
+        "minOrder": 150,
+        "price": 24.99,
+        "rating": 4.8
+    },
+    {
+        "name": "Fiskars Scissors",
+        "text": "Make tough cuts with heavy-duty PowerArc patent-pending technology which boasts curved blades that alter the angle between blades to give you over 30 percent more power. Heavy-duty coined stainless steel blades power through thick materials without separation and won’t rust. Ergonomic handle with Softgrip and strategic texturing enhances comfort",
+        "img": "https://i.ibb.co/HDXGVkG/scissors.jpg",
+        "stock": 75612,
+        "minOrder": 220,
+        "price": 15.99,
+        "rating": 4.6
+    },
+    {
+        "name": "Anti Cutter Knife",
+        "text": "RAZOR SHARP 18mm BLADE - Preloaded with LBB Heavy-Duty Ultra-Sharp Black Snap-Off Blade from Japanese tool steel for unmatched sharpness and edge retention. 18mm blade has 8 razor-sharp snap-off segments for industrial or construction applications. FIBERGLASS REINFORCED HANDLE - Chemically resistant, fiberglass-reinforced handle with wraparound rubber grip ergonomically designed for comfort and control. The stainless-steel channel keeps the blade securely in place for safe operation.",
+        "img": "https://i.ibb.co/ZmS7nVC/anti-cutter.jpg",
+        "stock": 45621,
+        "minOrder": 100,
+        "price": 26.99,
+        "rating": 4.7
+    },
+    {
+        "name": "One-Hole Punch",
+        "text": "Paperwork can be a hassle, but hole punching it shouldn't be. With the EZ Squeeze One-Hole Punch, experience 50% easier, jam-free punching when you need it most. The curved, lightweight non-slip grip handles provide optimal comfort ideal for frequent single hole punch users. Efficiently built into the handle is a chip waste chamber that easily empties through a door. Handles also lock closed for compact storage in drawers, bags, or a craft box. With smooth, curved ergonomic handles, conquer paper stacks with unprecedented ease. FEATURES:ProPunch technology for 50% easier punchingEasily 1 hole punch up to 10 sheetsLightweight, ergonomic design for easier frequent useJam-free for smooth, continuous operationIn-handle chip waste collection easily empties through doorCurved, ergonomic shape with soft grip for comfortHandles lock closed for storage.",
+        "img": "https://i.ibb.co/gRC5VSx/hole-punch.jpg",
+        "stock": 24970,
+        "minOrder": 80,
+        "price": 36.99,
+        "rating": 4.9
+    },
+    {
+        "name": "Drawing Pad",
+        "text": "Drawing Pad, 9x12, 80 lb. / 130 gsm, 24 Sheets. Artist’s drawing pad for amateurs, professionals, and students. Smooth surface is ideal for media such as charcoal, graphite, colored pencils, pastels, ink, and more. Medium-weight, acid-free construction for archival longevity. Micro-perforated edge allows sheets to be easily removed from the pad. Durable double-spiral binding, heavy chipboard backing, cardstock cover. Dimensions measure 9 x 12 inches; 24 sheets per pad; 80 pound/130 gsm weight.",
+        "img": "https://i.ibb.co/yQ4GByb/sketch-book.jpg",
+        "stock": 45763,
+        "minOrder": 150,
+        "price": 14.99,
+        "rating": 4.9
+    },
+    {
+        "name": "Pencil Sharpener",
+        "text": "Our pencil sharpener is cute. Although it is a manual pencil sharpener, it can exercise children's hands-on ability, so that children have more sense of success and have more beautiful memories. The spiral blade and sharpener of the pencil sharpener are made of pure steel and are very durable. The pencil sharpener is the perfect gift for kids, teachers, students, engineers, children, artists and anyone who needs a pencil sharpener! The pencil sharpener is the appearance of a cute teddy bear. The manual sharpener is composed of ABS plastic and a professional spiral blade. The pencil sharpener can sharpen it many times without breaking. And this small pencil sharpener will not take up much space. With the popularity of home offices, it is necessary to make full use of the limited available space.",
+        "img": "https://i.ibb.co/xmCTLsS/sharpner.jpg",
+        "stock": 45796,
+        "minOrder": 50,
+        "price": 24.99,
+        "rating": 4.6
+    }
+]
