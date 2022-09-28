@@ -10,13 +10,13 @@ const Signup = () => {
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",
-    role: false,
+    role: "user",
   });
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     location: "Dhaka, Bangladesh",
-    role: false,
+    role: "user",
     img: "https://i.ibb.co/5sQ7jQp/demouser-01.png",
   });
   const [errors, setErrors] = useState({

@@ -5,7 +5,7 @@ const useProduct = (id) => {
   const [product, setProduct] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://digital-healthcare.onrender.com/services/${id}`)
+      .get(`https://digital-healthcare.onrender.com/doctors/${id}`)
       .then((res) => {
         setProduct(res.data);
       });

@@ -3,9 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase.init";
-import useAdmin from "../../hooks/useAdmin";
 import useUser from "../../hooks/useUser";
-import useUsers from "../../hooks/useUsers";
 
 const DashNav = () => {
   const [authUser] = useAuthState(auth);
@@ -32,7 +30,7 @@ const DashNav = () => {
         >
           My Profile
         </Link>
-        {user?.role ? (
+        {user?.role === "admin" && (
           <span className="d-block">
             <Link
               className="btn btn-main text-start d-lg-block my-3 me-4"
@@ -44,19 +42,13 @@ const DashNav = () => {
               className="btn btn-main text-start d-lg-block my-3 me-4"
               to="/dashboard/manageorders"
             >
-              Manage Orders
-            </Link>
-            <Link
-              className="btn btn-main text-start d-lg-block my-3 me-4"
-              to="/dashboard/manageproducts"
-            >
-              Manage Products
+              Manage Appointments
             </Link>
             <Link
               className="btn btn-main text-start d-lg-block my-3 me-4"
               to="/dashboard/addproduct"
             >
-              Add Product
+              Add Appointments
             </Link>
             <Link
               className="btn btn-main text-start d-lg-block my-3 me-4"
@@ -64,8 +56,15 @@ const DashNav = () => {
             >
               Make Admin
             </Link>
+            <Link
+              className="btn btn-main text-start d-lg-block my-3 me-4"
+              to="/dashboard/mkdoctor"
+            >
+              Make Doctor
+            </Link>
           </span>
-        ) : (
+        )}
+        {user?.role === "doctor" && (
           <span>
             <Link
               className="btn btn-main text-start d-lg-block mt-2 mb-3 me-4"
@@ -77,13 +76,35 @@ const DashNav = () => {
               className="btn btn-main text-start d-lg-block my-3 me-4"
               to="/dashboard/myorders"
             >
-              My Orders
+              Booked Appointments
             </Link>
             <Link
               className="btn btn-main text-start d-lg-block my-3 me-4"
-              to="/dashboard/addreview"
+              to="/dashboard/myorders"
             >
-              Add Review
+              Provide Prescription
+            </Link>
+          </span>
+        )}
+        {user?.role === "user" && (
+          <span>
+            <Link
+              className="btn btn-main text-start d-lg-block mt-2 mb-3 me-4"
+              to="/dashboard/editprofile"
+            >
+              Edit Profile
+            </Link>
+            <Link
+              className="btn btn-main text-start d-lg-block my-3 me-4"
+              to="/dashboard/myorders"
+            >
+              My Appointments
+            </Link>
+            <Link
+              className="btn btn-main text-start d-lg-block my-3 me-4"
+              to="/dashboard/myorders"
+            >
+              My Diagonosis
             </Link>
           </span>
         )}

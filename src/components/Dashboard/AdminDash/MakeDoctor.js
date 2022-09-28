@@ -9,7 +9,7 @@ import useUser from "../../../hooks/useUser";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-const MakeAdmin = () => {
+const MakeDoctor = () => {
   const [authUser] = useAuthState(auth);
   let navigate = useNavigate();
 
@@ -22,7 +22,7 @@ const MakeAdmin = () => {
   const onSubmit = (data) => {
     const newAdmin = {
       email: data.email,
-      role: "admin",
+      role: "doctor",
     };
     //console.log(newAdmin);
     axios
@@ -30,7 +30,7 @@ const MakeAdmin = () => {
       .then((res) => {
         //console.log(res.data);
         if (res.data.acknowledged) {
-          toast.success("Admin is added.");
+          toast.success("Doctor is added.");
         }
         navigate("/dashboard");
       });
@@ -46,14 +46,14 @@ const MakeAdmin = () => {
               onSubmit={handleSubmit(onSubmit)}
               className="px-5 pt-3 pb-5 bg-dark-pro rounded-10 shadow-lg text-main"
             >
-              <h3 className="mt-4 mb-0 text-main">Add An Admin</h3>
+              <h3 className="mt-4 mb-0 text-main">Add A Doctor</h3>
               <small className="mb-3 text-second d-block">
                 Please provide a feedback to improve our service.
               </small>
               <div className="my-4 d-block">
                 <label htmlFor="email" className="form-label">
                   {" "}
-                  New Admin Email
+                  New Doctor Email
                 </label>
                 <input
                   className="form-control"
@@ -78,4 +78,4 @@ const MakeAdmin = () => {
   );
 };
 
-export default MakeAdmin;
+export default MakeDoctor;

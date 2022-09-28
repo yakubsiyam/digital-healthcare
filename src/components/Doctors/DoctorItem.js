@@ -38,9 +38,9 @@ const ProductItem = ({ product }) => {
                 {speciality}
                 <span
                   onClick={() => handleProductDetails(_id)}
-                  className="fw-bolder cursor-pointer"
+                  className="fw-bolder cursor-pointer btn btn-danger mb-2"
                 >
-                  View Details
+                  Make Appointment
                 </span>
               </small>
             </div>

@@ -1,8 +1,8 @@
+import axios from "axios";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import axiosPrivate from "../../../api/axiosPrivate";
 import { auth } from "../../../firebase.init";
 import useReviews from "../../../hooks/useReviews";
 import useUser from "../../../hooks/useUser";
@@ -30,7 +30,7 @@ const AddReview = () => {
     };
     //console.log(newReview);
 
-    axiosPrivate
+    axios
       .post("https://digital-healthcare.onrender.com/reviews", newReview)
       .then((res) => {
         //console.log(res.data);

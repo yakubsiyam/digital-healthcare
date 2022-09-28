@@ -32,7 +32,7 @@ const BestSellers = () => {
         <div className="my-5 text-center">
           <Link
             className="mt-4 px-4 border-2 fw-bolder btn btn-outline-main shadow"
-            to="/products"
+            to="/services"
           >
             View All Services
           </Link>
